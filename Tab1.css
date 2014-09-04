@@ -38,6 +38,19 @@
 .Tab1_blindsPanel .ui-panel-inner {
 	padding: 15px 15px 15px 15px;
 }
+.Tab1_blindsPanel{
+	height: auto;
+	width:120px;
+	min-height: 0;
+	position: fixed;
+	top: 50px;
+	bottom: 50px;
+	overflow: hidden;
+}
+.Tab1_blindsPanel img{
+	margin:center;
+	border:1px solid black;
+}
 .Tab1_blindsPanel:focus {
 	outline: 0;
 }
@@ -375,3 +388,5 @@
 	width: 100px; height: 100px;
 	display: block;
 }
+
+

@@ -39,13 +39,7 @@
 	padding: 15px 15px 15px 15px;
 }
 .Tab1_blindsPanel{
-	
 	width:120px;
-	min-height: 0;
-	position: fixed;
-	top: 50px;
-	bottom: 50px;
-	
 }
 .Tab1_blindsPanel img{
 	margin:center;

@@ -166,13 +166,39 @@ Tab1_js = function(runBeforeShow) {
             $(document).off("click", '[name="mobileimage_30"]').on({
                 click: function() {
                     if (!$(this).attr('disabled')) {
-                        alert('Tsela tun the cone maburu a tshephe');
+                        alert('Tsela run the code maburu a tshephe');
                         Apperyio('blindsPanel').panel("close");
 
                     }
                 },
             }, '[name="mobileimage_30"]');
 
+			            $(document).off("click", '[name="mobileimage_29"]').on({
+                click: function() {
+                    if (!$(this).attr('disabled')) {
+                        //alert('Tsela run the code maburu a tshephe');
+						
+						var rumId = getRoomID();
+						if(rumId == 1){
+							alert('One');
+						}
+						else if(rumId == 2){
+							alert('Two');
+						}
+						else if(rumId == 3){
+							//alert('Three');
+							$("#main_area >img").fadeOut(5);
+							$("#main_area >img#" + 44).fadeIn(5);
+						}
+						else if(rumId == 4){
+							alert('Four');
+						}
+						
+                        Apperyio('blindsPanel').panel("close");
+
+                    }
+                },
+            }, '[name="mobileimage_29"]');
         };
 
     $(document).off("pagebeforeshow", "#Tab1").on("pagebeforeshow", "#Tab1", function(event, ui) {
